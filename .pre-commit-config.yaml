@@ -50,6 +50,7 @@ repos:
       - id: mypy
         additional_dependencies: [
           "django-stubs",
+          "djangorestframework-stubs",
         ]
         args: [
           "--no-implicit-optional",
