@@ -4,11 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = "*"
 
 [dev-packages]
 flit = "*"
 mypy = "*"
 flake8 = "*"
+django-stubs = {extras = ["compatible-mypy"], version = "*"}
 
 [requires]
 python_version = "3.10"
