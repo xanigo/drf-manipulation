@@ -14,4 +14,4 @@ dynamic = ["version", "description"]
 Source = "https://github.com/xanigo/drf-manipulation"
 
 [tool.flit.module]
-name = "manipulation"
+name = "drf_manipulation"
