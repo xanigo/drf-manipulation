@@ -48,3 +48,11 @@ repos:
     rev: v0.961
     hooks:
       - id: mypy
+        additional_dependencies: [
+          "django-stubs",
+        ]
+        args: [
+          "--no-implicit-optional",
+          "--no-strict-optional",
+          "--disallow-untyped-defs",
+        ]
