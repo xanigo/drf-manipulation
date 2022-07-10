@@ -10,31 +10,31 @@ repos:
     hooks:
       - id: pyupgrade
         args: [
-          --py3-plus,
-          --keep-runtime-typing,
+          "--py3-plus",
+          "--keep-runtime-typing",
         ]
   - repo: https://github.com/myint/autoflake
     rev: v1.4
     hooks:
       - id: autoflake
         args: [
-          --recursive,
-          --in-place,
-          --remove-all-unused-imports,
-          --remove-unused-variables,
-          --expand-star-imports,
-          --exclude,
-          __init__.py,
-          --remove-duplicate-keys,
+          "--recursive",
+          "--in-place",
+          "--remove-all-unused-imports",
+          "--remove-unused-variables",
+          "--expand-star-imports",
+          "--exclude",
+          "__init__.py",
+          "--remove-duplicate-keys",
         ]
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1
     hooks:
       - id: isort
         args: [
-          --profile,
-          black,
-          --use-parentheses,
+          "--profile",
+          "black",
+          "--use-parentheses",
         ]
   - repo: https://github.com/psf/black
     rev: 22.6.0
