@@ -1,7 +1,7 @@
 from django.db.models import DateTimeField
 
 
-class ManipulationMixinModel:
+class ManipulationModelMixin:
     inserted_at: DateTimeField = DateTimeField(
         auto_now_add=True,
         db_index=True,
