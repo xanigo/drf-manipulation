@@ -1,7 +1,7 @@
 from django.db.models import DateTimeField, Model
 
 
-class ManipulationModel(Model):
+class ManipulationAbstractModel(Model):
     created_at: DateTimeField = DateTimeField(
         auto_now_add=True,
         db_index=True,
